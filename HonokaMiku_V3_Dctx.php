@@ -79,7 +79,7 @@ class V3_Dctx extends DecrypterContext
 		
 		if($offset > $this->pos)
 			$loop_times = $offset - $this->pos;
-		elseif($offset == $pos)
+		elseif($offset == $this->pos)
 			return;
 		else
 		{
